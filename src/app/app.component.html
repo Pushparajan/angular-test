@@ -13,7 +13,7 @@
   </tr>
   <tr  *ngFor = "let todo of todoList">
     <td> {{todo.name}}</td>
-    <td> {{todo.complete ? "...": "X"}}</td>
+    <td> {{todo.complete ? "Complete": "TODO"}}</td>
     <td> <button (click)="onDelete(todo)">Delete</button></td>
   </tr>
 </table>
